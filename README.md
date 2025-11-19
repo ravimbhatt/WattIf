@@ -6,18 +6,20 @@ It is engineered to stress-test big data ingestion pipelines and demonstrate adv
 
 🚀 Features
 1. Data Generation (The "Watt")
-High Performance: Uses orjson and multi-threading to generate massive volumes of synthetic smart meter JSON data.
 
-Memory Efficient: Implements Bloom Filters to manage uniqueness for millions of serial numbers.
+  *High Performance: Uses orjson and multi-threading to generate massive volumes of synthetic smart meter JSON data.
 
-Parallel Ingestion: seamless upload to Google Cloud Storage (GCS) using the Transfer Manager.
+  *Memory Efficient: Implements Bloom Filters to manage uniqueness for millions of serial numbers.
+
+  *Parallel Ingestion: seamless upload to Google Cloud Storage (GCS) using the Transfer Manager.
 
 2. Analysis & ML (The "If")
-Automated Anomaly Detection: Includes a Jupyter notebook (Smart_Meter_Anomaly_Detection.ipynb) to set up Google Cloud Dataplex DataScans.
 
-Predictive Insights: Uses AI models trained on historical BigQuery data to detect anomalies in meter readings.
+  *Automated Anomaly Detection: Includes a Jupyter notebook (Smart_Meter_Anomaly_Detection.ipynb) to set up Google Cloud Dataplex DataScans.
 
-Rule-Based Logic: configured to monitor key metrics (Average and Max consumption) on hourly rolled data (consumption_hour_rolled) with a 99% anomaly probability threshold.
+  *Predictive Insights: Uses AI models trained on historical BigQuery data to detect anomalies in meter readings.
+
+  *Rule-Based Logic: configured to monitor key metrics (Average and Max consumption) on hourly rolled data (consumption_hour_rolled) with a 99% anomaly probability threshold.
 
 ## 📋 Prerequisites
 
@@ -89,13 +91,20 @@ You can tune the worker threads based on your machine's core count and I/O capab
 
 
 Analyze Data (Anomaly Detection)
+
 Once the data is loaded into BigQuery (e.g., via a GCS-to-BigQuery transfer job):
-Open Smart_Meter_Anomaly_Detection.ipynb in Jupyter or Google Colab.
-Update the project_id and bigquery_source_table_full_path variables.
-Run the notebook to provision a Dataplex DataScan.
-Metric: Checks consumption_hour_rolled.
-Logic: Flags data points that deviate statistically from the trained baseline (AVG/MAX).
-Output: Results are exported to a BigQuery table for visualization.
+
+  *Open Smart_Meter_Anomaly_Detection.ipynb in Jupyter or Google Colab.
+
+  *Update the project_id and bigquery_source_table_full_path variables.
+
+  *Run the notebook to provision a Dataplex DataScan.
+
+  *Metric: Checks consumption_hour_rolled.
+
+  *Logic: Flags data points that deviate statistically from the trained baseline (AVG/MAX).
+
+  *Output: Results are exported to a BigQuery table for visualization.
 
 
 ## 🏗️ Architecture
