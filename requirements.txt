@@ -1,0 +1,8 @@
+# Google Cloud Storage SDK (requires version 2.11+ for transfer_manager)
+google-cloud-storage>=2.14.0
+
+# Fast JSON serialization
+orjson>=3.9.0
+
+# Probabilistic data structure for unique Serial Number generation
+bloom-filter>=1.2.6
