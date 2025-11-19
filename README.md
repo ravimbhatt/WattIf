@@ -7,11 +7,11 @@ It is engineered to stress-test big data ingestion pipelines and demonstrate adv
 🚀 Features
 1. Data Generation (The "Watt")
 
-  *High Performance: Uses orjson and multi-threading to generate massive volumes of synthetic smart meter JSON data.
+  * High Performance: Uses orjson and multi-threading to generate massive volumes of synthetic smart meter JSON data.
 
-  *Memory Efficient: Implements Bloom Filters to manage uniqueness for millions of serial numbers.
+  * Memory Efficient: Implements Bloom Filters to manage uniqueness for millions of serial numbers.
 
-  *Parallel Ingestion: seamless upload to Google Cloud Storage (GCS) using the Transfer Manager.
+  * Parallel Ingestion: seamless upload to Google Cloud Storage (GCS) using the Transfer Manager.
 
 2. Analysis & ML (The "If")
 
@@ -94,17 +94,17 @@ Analyze Data (Anomaly Detection)
 
 Once the data is loaded into BigQuery (e.g., via a GCS-to-BigQuery transfer job):
 
-  *Open Smart_Meter_Anomaly_Detection.ipynb in Jupyter or Google Colab.
+  * Open Smart_Meter_Anomaly_Detection.ipynb in Jupyter or Google Colab.
 
-  *Update the project_id and bigquery_source_table_full_path variables.
+  * Update the project_id and bigquery_source_table_full_path variables.
 
-  *Run the notebook to provision a Dataplex DataScan.
+  * Run the notebook to provision a Dataplex DataScan.
 
-  *Metric: Checks consumption_hour_rolled.
+  * Metric: Checks consumption_hour_rolled.
 
-  *Logic: Flags data points that deviate statistically from the trained baseline (AVG/MAX).
+  * Logic: Flags data points that deviate statistically from the trained baseline (AVG/MAX).
 
-  *Output: Results are exported to a BigQuery table for visualization.
+  * Output: Results are exported to a BigQuery table for visualization.
 
 
 ## 🏗️ Architecture
