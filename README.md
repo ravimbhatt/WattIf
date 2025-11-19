@@ -15,11 +15,11 @@ It is engineered to stress-test big data ingestion pipelines and demonstrate adv
 
 2. Analysis & ML (The "If")
 
-  *Automated Anomaly Detection: Includes a Jupyter notebook (Smart_Meter_Anomaly_Detection.ipynb) to set up Google Cloud Dataplex DataScans.
+  * Automated Anomaly Detection: Includes a Jupyter notebook (Smart_Meter_Anomaly_Detection.ipynb) to set up Google Cloud Dataplex DataScans.
 
-  *Predictive Insights: Uses AI models trained on historical BigQuery data to detect anomalies in meter readings.
+  * Predictive Insights: Uses AI models trained on historical BigQuery data to detect anomalies in meter readings.
 
-  *Rule-Based Logic: configured to monitor key metrics (Average and Max consumption) on hourly rolled data (consumption_hour_rolled) with a 99% anomaly probability threshold.
+  * Rule-Based Logic: configured to monitor key metrics (Average and Max consumption) on hourly rolled data (consumption_hour_rolled) with a 99% anomaly probability threshold.
 
 ## 📋 Prerequisites
 
