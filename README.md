@@ -1,4 +1,5 @@
 💡 WattIf: Smart Meter Data Generator & Anomaly Detection
+
 WattIf is a comprehensive toolkit designed for the energy sector. It consists of a high-performance synthetic data generator and a sophisticated anomaly detection analysis pipeline using Google Cloud.
 
 It is engineered to stress-test big data ingestion pipelines and demonstrate predictive maintenance capabilities using Google Cloud Dataplex.
